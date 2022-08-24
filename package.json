@@ -13,10 +13,11 @@
     "src/**/*.{ts,css,html}": [
         "npm run prettier:check"
     ]
-},
+  },
   "husky": {   
      "hooks": {  
-        "pre-commit": "lint-staged"
+        "pre-commit": "lint-staged",
+        "pre-push": "npm run test"
       }   
    },
   "jest": {
