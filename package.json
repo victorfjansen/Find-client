@@ -9,7 +9,8 @@
         "test": "jest",
         "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\"",
         "prepare": "husky install",
-        "commit-quest": "commitlint --edit "
+        "commit-verify": "commitlint --edit",
+        "commit-quest": "git-cz"
     },
     "lint-staged": {
         "src/**/*.{ts,css,html}": [
@@ -53,6 +54,8 @@
         "@commitlint/cli": "^17.0.3",
         "@commitlint/config-conventional": "^17.0.3",
         "@types/jasmine": "~4.0.0",
+        "commitizen": "^4.2.5",
+        "cz-conventional-changelog": "^3.3.0",
         "husky": "^8.0.1",
         "jasmine-core": "~4.1.0",
         "jest": "^28.1.3",
@@ -61,5 +64,10 @@
         "lint-staged": "^13.0.3",
         "prettier": "^2.7.1",
         "typescript": "~4.7.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
