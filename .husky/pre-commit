@@ -4,5 +4,3 @@
 npx prettier --write src
 npm run prettier:check
 npm run test
-npm run commit-quest
-npm run commit-verify

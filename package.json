@@ -10,18 +10,12 @@
         "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\"",
         "prepare": "husky install",
         "commit-verify": "commitlint --edit",
-        "commit-quest": "git-cz"
+        "commit": "git-cz"
     },
     "lint-staged": {
         "src/**/*.{ts,css,html}": [
             "npm run prettier:check"
         ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged",
-            "pre-push": "npm run test"
-        }
     },
     "jest": {
         "preset": "jest-preset-angular",
