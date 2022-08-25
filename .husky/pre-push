@@ -4,3 +4,4 @@
 npx prettier --write src
 npm run prettier:check
 npm run test
+
