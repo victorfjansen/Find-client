@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
     declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { environment } from '../environments/environment';
             // or after 30 seconds (whichever comes first).
             registrationStrategy: 'registerWhenStable:30000',
         }),
+        StoreModule.forRoot({}, {}),
     ],
     providers: [],
     bootstrap: [AppComponent],
