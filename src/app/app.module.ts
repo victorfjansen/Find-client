@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
     declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { StoreModule } from '@ngrx/store';
             registrationStrategy: 'registerWhenStable:30000',
         }),
         StoreModule.forRoot({}, {}),
+        EffectsModule.forRoot([]),
     ],
     providers: [],
     bootstrap: [AppComponent],
