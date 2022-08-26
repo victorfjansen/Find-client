@@ -29,22 +29,6 @@ wip: Código em desenvolvimento
 
 ---
 
-## Como foi testado?
-
-<!-- Selecione apenas uma das opções (✅ ❌) abaixo. -->
-
-| TIPO DE TESTE    | FEITO |
-| ---------------- | ----- |
-| `Storybook`      | ✅ ❌ |
-| `Teste unitário` | ✅ ❌ |
-| `Teste E2E`      | ✅ ❌ |
-
-<!-- Descreva os testes que você executou para verificar suas alterações.
-Forneça instruções para que possamos reproduzir.
--->
-
----
-
 ## Checklist
 
 <!-- Verifique as opções relacionadas a você. -->
